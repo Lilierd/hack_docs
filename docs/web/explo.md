@@ -1,6 +1,6 @@
 ## Méthodes HTTP
 Toujours checker les méthodes acceptées (always check OPTIONS method) :
-```bash
+```bash linenums="0"
 curl -i -X OPTIONS 'http://<url_to_pwn>/route'
 ```
 ou
@@ -13,4 +13,4 @@ for m in GET POST PUT PATCH HEAD OPTIONS TRACE CONNECT; do
   echo "$m -> $code"
 done
 ```
-> Attention en situation réelle faire un `DELETE` peux supprimer des parties de l'application, voire toute l'application si on le fait sur le `/`
+> Attention en situation réelle faire un `DELETE` peut supprimer des parties de l'application, voire toute l'application si on le fait sur le `/`
