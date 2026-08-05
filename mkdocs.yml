@@ -1,6 +1,24 @@
 site_name: Hack Docs
 theme:
   name: material
+  palette:
+    # Palette clair
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Passer en mode sombre
+
+    # Palette sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Passer en mode clair
   features:
     - search.suggest
 plugins:
