@@ -4,7 +4,7 @@ La doc des h@ck3rz.
 
 ## Setup
 ```bash
-pip install mkdocs-material
+pip install requirements.txt
 ```
 
 ## Commands

@@ -23,6 +23,16 @@ theme:
     - search.suggest
 plugins:
   - search
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: fr
+          default: true
+          name: Français
+          build: true
+        - locale: en
+          name: English
+          build: true
 nav:
   - Web:
     # - web/index.md
