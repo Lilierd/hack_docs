@@ -1,1 +1,10 @@
 site_name: Hack Docs
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - search.suggest
+plugins:
+  - search
+site_url: https://lilierd.github.io/hack_docs/
+use_directory_urls: true
