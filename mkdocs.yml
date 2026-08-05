@@ -5,5 +5,10 @@ theme:
     - search.suggest
 plugins:
   - search
+nav:
+  - Web:
+    # - web/index.md
+    - Exploration: web/explo.md
+    - Exploitation: web/exploit.md
 site_url: https://lilierd.github.io/hack_docs/
 use_directory_urls: true

@@ -1,5 +1,9 @@
 # Welcome to Hack Docs
 
+## Authors
+The goats:
+* [Redlambtoken](https://github.com/Redlambtoken)
+* [Lilierd](https://github.com/Lilierd)
 
 ## Commands
 
