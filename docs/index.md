@@ -1,16 +1,20 @@
-# Welcome to Hack Docs
+# Bienvenue sur Hack Docs !
 
-## Authors
-The goats:
+## Auteurs
+Les goats:
 
-* [Redlambtoken](https://github.com/Redlambtoken)
-* [Lilierd](https://github.com/Lilierd)
+- Redlambtoken:
+    - [Github](https://github.com/Redlambtoken)
+    - [root-me](https://www.root-me.org/lambtoken)
+- Lilierd:
+    - [Github](https://github.com/Lilierd)
+    - [root-me](https://www.root-me.org/Lilierd)
 
-## Commands
+## Commandes
 
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* `mkdocs serve` - Démarre le serveur **mkdocs** avec du super *live-reload*.
+* `mkdocs build` - Lance le *build* de la documentation site.
+* `mkdocs -h` - Affiche le message d'aide **mkdocs**.
 
 ## Project layout
 
