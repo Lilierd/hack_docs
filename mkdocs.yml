@@ -12,3 +12,5 @@ nav:
     - Exploitation: web/exploit.md
 site_url: https://lilierd.github.io/hack_docs/
 use_directory_urls: true
+extra_javascript:
+  - javascripts/visit-counter.js
