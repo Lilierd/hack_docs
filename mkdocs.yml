@@ -1,7 +1,6 @@
 site_name: Hack Docs
 theme:
   name: material
-  custom_dir: overrides
   features:
     - search.suggest
 plugins:
