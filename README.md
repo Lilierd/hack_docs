@@ -2,6 +2,11 @@
 
 La doc des h@ck3rz.
 
+## Setup
+```bash
+pip install mkdocs-material
+```
+
 ## Commands
 
 * `mkdocs serve` - Start the live-reloading docs server.
