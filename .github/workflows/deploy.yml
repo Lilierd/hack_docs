@@ -27,6 +27,7 @@ jobs:
       - run: mkdocs build
         env:
           STATS_API_URL: ${{ secrets.STATS_API_URL }}
+      - run: grep -r "STATS_API_URL" site/ || echo "NOT FOUND IN BUILD OUTPUT"
 
       - uses: actions/upload-pages-artifact@v3
         with:
