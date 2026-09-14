@@ -10,6 +10,3 @@ The goats:
 - Lilierd:
     - [Github](https://github.com/Lilierd)
     - [root-me](https://www.root-me.org/Lilierd)
-
-
-For full mkdocs documentation visit [mkdocs-material](https://squidfunk.github.io/mkdocs-material/).
