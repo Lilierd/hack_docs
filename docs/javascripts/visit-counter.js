@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("https://hackdocsapi.occoru.art/api/hit", {
+  const apiUrl = window.STATS_API_URL || "http://localhost:3001";
+
+  fetch(`${apiUrl}/api/hit`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ path: window.location.pathname }),
