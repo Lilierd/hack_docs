@@ -4,7 +4,7 @@ La doc des h@ck3rz.
 
 ## Setup
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Commands
