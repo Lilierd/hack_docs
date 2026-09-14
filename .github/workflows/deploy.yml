@@ -24,9 +24,11 @@ jobs:
           python-version: '3.x'
 
       - run: pip install -r requirements.txt
+      - run: playwright install --with-deps chromium
       - run: mkdocs build
         env:
           STATS_API_URL: ${{ secrets.STATS_API_URL }}
+          MKDOCS_EXPORTER_PDF: true
       - run: grep -r "STATS_API_URL" site/ || echo "NOT FOUND IN BUILD OUTPUT"
 
       - uses: actions/upload-pages-artifact@v3

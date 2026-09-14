@@ -24,19 +24,34 @@ theme:
     - search.suggest
 plugins:
   - search
-  - i18n:
-      docs_structure: suffix
-      languages:
-        - locale: fr
-          default: true
-          name: Français
-          build: true
-        - locale: en
-          name: English
-          build: true
+  # - i18n:
+  #     docs_structure: suffix
+  #     languages:
+  #       - locale: fr
+  #         default: true
+  #         name: Français
+  #         build: true
+  #       - locale: en
+  #         name: English
+  #         build: true
+  - exporter:
+      formats:
+        pdf:
+          enabled: !ENV [MKDOCS_EXPORTER_PDF, true]
+          concurrency: 4
+          aggregator:
+            enabled: true
+            output: .well-known/site.pdf
+            covers: all
+      buttons:
+        - title: Télécharger en PDF
+          icon: material-file-download-outline
+          enabled: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.enabled
+          attributes: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.attributes
 nav:
+  - Home: index.md
   - Web:
-    # - web/index.md
+    - Home: web/index.md
     - Exploration: web/explo.md
     - Exploitation: web/exploit.md
 site_url: https://lilierd.github.io/hack_docs/
@@ -52,5 +67,7 @@ markdown_extensions:
   - pymdownx.superfences
 extra_javascript:
   - javascripts/visit-counter.js
+extra_css:
+  - stylesheets/extra.css
 extra:
   stats_api_url: !ENV [STATS_API_URL, "http://localhost:3001"]

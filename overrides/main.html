@@ -1,5 +1,17 @@
 {% extends "base.html" %}
 
+{% block header %}
+  {{ super() }}
+
+  <a
+    href="{{ config.site_url }}/.well-known/site.pdf"
+    class="md-header__button md-icon pdf-download-button"
+    title="Download to PDF"
+    aria-label="Download to PDF"
+  >
+    {% include ".icons/material/file-download-outline.svg" %}
+  </a>
+{% endblock %}
 {% block scripts %}
   {{ super() }}
   <script>
