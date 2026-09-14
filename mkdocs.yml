@@ -1,6 +1,7 @@
 site_name: Hack Docs
 theme:
   name: material
+  custom_dir: overrides
   palette:
     # Palette clair
     - media: "(prefers-color-scheme: light)"
@@ -51,3 +52,5 @@ markdown_extensions:
   - pymdownx.superfences
 extra_javascript:
   - javascripts/visit-counter.js
+extra:
+  stats_api_url: !ENV [STATS_API_URL, "http://localhost:3001"]
