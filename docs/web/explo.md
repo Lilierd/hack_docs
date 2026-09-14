@@ -1,3 +1,4 @@
+--8<-- "snippets/section.md"
 ## Méthodes HTTP
 Toujours checker les méthodes acceptées (always check OPTIONS method) :
 ```bash linenums="0"

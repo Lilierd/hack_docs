@@ -1,0 +1,1 @@
+Chaque partie concerne une catégorie de failles, un langage, un protocole, une méthode ou un principe de l'IT. Entre HTTP, XSS, CSRF, PHP et CSP.
